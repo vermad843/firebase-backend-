@@ -17,5 +17,6 @@
 [] start in test mode(when you are developing)
 [] firebase deploy : important command 
 [] admin is like db 
+[] firebase serve not working for me .
 
    
