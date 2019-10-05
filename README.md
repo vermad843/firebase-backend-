@@ -16,7 +16,13 @@
 [] initializing our database : press database(firebase)
 [] start in test mode(when you are developing)
 [] firebase deploy : important command 
-[] admin is like db 
+[] admin.firestore is like db 
 [] firebase serve not working for me .
+[] db.collection('screams') = admin.firestore.collection('screams') 
+[] error = 500 (server side error )
+[]  error = 400 (client side error )
+
+
+[] cd functions : npm i --save express
 
    
