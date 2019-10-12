@@ -1,4 +1,4 @@
-const {db} = require('../util/admin');
+const {admin ,db} = require('../util/admin');
 
 const config = require('../util/config');
 
@@ -85,4 +85,22 @@ exports.signup = (req,res) => {
         }
         return res.status(500).json({error : err.code});
     });
+}
+
+exports.uploadImage = (req,res) => {
+    const Busboy = require('busboy');
+    const path = require('path');
+    const os   = require('os');
+    const fs   = require('fs');
+    
+    const busboy = new Busboy({headers : req.headers});
+    
+
+    busboy.on('file', (fieldname,file,filename, encoding,mimetype) => {
+          //.png,.jpeg
+      const imageExtension = filename.split('.')[filename.split('.').length -1];
+      // image.jpg
+       imageFileName = `${Math.round(Math.random()*100000000000)}.${imageExtension}`;
+ 
+    })
 }

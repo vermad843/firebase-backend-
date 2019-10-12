@@ -25,4 +25,8 @@
 
 [] cd functions : npm i --save express
 
+
+[] npm i --save busboy 
+[] for uploading profile picture
+
    
