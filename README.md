@@ -29,4 +29,8 @@
 [] npm i --save busboy 
 [] for uploading profile picture
 
+
+
+[] error 9 : for solving this we have to create a index in our db.
+
    
